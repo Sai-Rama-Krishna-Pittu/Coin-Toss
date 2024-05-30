@@ -1,116 +1,80 @@
-In this project, let's build a **Coin Toss Game** by applying the concepts we have learned till now.
+# 🎲 Coin Toss Game 🎲
 
-### Refer to the image below:
+Welcome to the Coin Toss Game! This is a fun and simple React project where you can toss a coin and track your results. Perfect for showcasing basic React skills while having a bit of fun!
 
-<br/>
-<div style="text-align: center;">
-    <img src="https://assets.ccbp.in/frontend/content/react-js/coin-toss-game-output.gif" alt="coin toss game output" style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
-</div>
-<br/>
+![Coin Toss Game Output](https://assets.ccbp.in/frontend/content/react-js/coin-toss-game-output.gif)
 
-### Design Files
+## Let's Get Started!
 
-<details>
-<summary>Click to view</summary>
+### Setup Instructions
 
-- [Extra Small (Size < 576px) and Small (Size >= 576px)](https://assets.ccbp.in/frontend/content/react-js/coin-toss-game-sm-output.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px)](https://assets.ccbp.in/frontend/content/react-js/coin-toss-game-lg-output.png)
+1. **Clone the Repository**:
+   ```sh
+   git clone https://github.com/YourUsername/Coin-Toss-Game.git
+   ```
+2. **Navigate to the Project Directory**:
+   ```sh
+   cd Coin-Toss-Game
+   ```
+3. **Install Dependencies**:
+   ```sh
+   npm install
+   ```
+4. **Start the Development Server**:
+   ```sh
+   npm start
+   ```
+   The app will be available at `http://localhost:3000`.
 
-</details>
+### How to Play
 
-### Set Up Instructions
+1. **Initial State**: The app starts with the heads image displayed and counts for heads, tails, and total set to 0.
+2. **Toss the Coin**: Click the **Toss Coin** button to randomly generate a toss result.
+   - **Heads**: If the toss result is heads, the heads image will be displayed, the heads count will increment by one, and the total count will also increment by one.
+   - **Tails**: If the toss result is tails, the tails image will be displayed, the tails count will increment by one, and the total count will also increment by one.
+3. **Track Your Results**: Keep track of how many times you get heads or tails and see the total number of tosses.
 
-<details>
-<summary>Click to view</summary>
+### Components Breakdown
 
-- Download dependencies by running `npm install`
-- Start up the app using `npm start`
-</details>
+- **CoinToss**: The main component managing the state and rendering the UI.
+  - Displays the current toss result (heads or tails).
+  - Shows the counts for heads, tails, and total tosses.
+  - Contains the **Toss Coin** button that triggers the coin toss logic.
 
-### Completion Instructions
+### Visual Aids
 
-<details>
-<summary>Functionality to be added</summary>
-<br/>
-
-The app must have the following functionalities
-
-- Initially, the app should have heads image and total, heads, tails counts as **0**
-- When the **Toss Coin** button is clicked, then the toss result should be generated using the below expression
-
-  ```
-  const tossResult = Math.floor(Math.random() * 2)
-  ```
-
-- If the number generated from the given expression is `0` then the result should be `heads` or else the result should be `tails`
-- When the **Toss Coin** is clicked, and the result is `heads` then
-  - The heads image should be displayed
-  - The heads count should be incremented by one
-  - The total should be incremented by one
-- When the **Toss Coin** is clicked, and the result is `tails` then
-  - The tails image should be displayed
-  - The tails count should be incremented by one
-  - The total should be incremented by one
-
-</details>
-
-<details>
-<summary>Implementation Files</summary>
-<br/>
-
-Use these files to complete the implementation:
-
-- `src/components/CoinToss/index.js`
-- `src/components/CoinToss/index.css`
-</details>
-
-### Important Note
-
-<details>
-<summary>Click to view</summary>
-
-<br/>
-
-**The following instructions are required for the tests to pass**
-
-- The toss result image should have the alt attribute value as **toss result**
-
-</details>
+- Initial State and Example Toss Results:
+  ![Coin Toss Game Small Output](https://assets.ccbp.in/frontend/content/react-js/coin-toss-game-sm-output.png)
+  ![Coin Toss Game Large Output](https://assets.ccbp.in/frontend/content/react-js/coin-toss-game-lg-output.png)
 
 ### Resources
 
-<details>
-<summary>Image URLs</summary>
+#### Images
 
-- [https://assets.ccbp.in/frontend/react-js/heads-img.png](https://assets.ccbp.in/frontend/react-js/heads-img.png)
-- [https://assets.ccbp.in/frontend/react-js/tails-img.png](https://assets.ccbp.in/frontend/react-js/tails-img.png)
+- Heads: [Heads Image](https://assets.ccbp.in/frontend/react-js/heads-img.png)
+- Tails: [Tails Image](https://assets.ccbp.in/frontend/react-js/tails-img.png)
 
-</details>
+#### Colors
 
-<details>
-<summary>Colors</summary>
+- Gold: `#e2a139`
+- Yellow: `#f9d423`
+- White: `#ffffff`
+- Brown: `#a35200`
+- Dark Blue: `#334155`
+- Blue Gray: `#475569`
 
-<br/>
+#### Font
 
-<div style="background-color: #e2a139; width: 150px; padding: 10px; color: white">Hex: #e2a139</div>
-<div style="background-color: #f9d423; width: 150px; padding: 10px; color: black">Hex: #f9d423</div>
-<div style="background-color: #ffffff; width: 150px; padding: 10px; color: black">Hex: #ffffff</div>
-<div style="background-color: #a35200; width: 150px; padding: 10px; color: white">Hex: #a35200</div>
-<div style="background-color: #334155; width: 150px; padding: 10px; color: white">Hex: #334155</div>
-<div style="background-color: #475569; width: 150px; padding: 10px; color: white">Hex: #475569</div>
+- **Roboto**
 
-</details>
+### About This Project
 
-<details>
-<summary>Font-families</summary>
+This project is a fun and engaging way to demonstrate basic React concepts such as state management, event handling, and conditional rendering. The intent is to create a simple yet functional app that can serve as a portfolio piece to showcase my passion for web development.
 
-- Roboto
+---
 
-</details>
+*Enjoy tossing the coin and may the odds be ever in your favor!* 🍀
 
-> ### _Things to Keep in Mind_
->
-> - All components you implement should go in the `src/components` directory.
-> - Don't change the component folder names as those are the files being imported into the tests.
-> - **Do not remove the pre-filled code**
-> - Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
+---
+
+Feel free to adjust any details according to your specific needs and preferences!
